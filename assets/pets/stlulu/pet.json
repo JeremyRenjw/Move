@@ -1,0 +1,346 @@
+{
+  "id": "stlulu",
+  "displayName": "lulu",
+  "description": "A small cheerful yellow-orange anime-style mascot pet with a round head, big eyes, a tiny fruit-like tuft on top, and orange shorts.",
+  "traits": {
+    "sociability": 0.5,
+    "independence": 0.6,
+    "playfulness": 0.6,
+    "energy_volatility": 0.4
+  },
+  "spritesheetPath": "spritesheet.webp",
+  "kind": "animal",
+  "frameSize": {
+    "width": 192,
+    "height": 208
+  },
+  "animations": {
+    "idle": {
+      "row": 0,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "alert": {
+      "row": 1,
+      "frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "talk": {
+      "row": 2,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "working": {
+      "row": 3,
+      "frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "celebrate": {
+      "row": 4,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  "evolutions": {
+    "baby": {
+      "spritesheetPath": "spritesheet.webp",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "alert": {
+          "row": 1,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "talk": {
+          "row": 2,
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "working": {
+          "row": 3,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "celebrate": {
+          "row": 4,
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      }
+    },
+    "child": {
+      "spritesheetPath": "spritesheet.webp",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "alert": {
+          "row": 1,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "talk": {
+          "row": 2,
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "working": {
+          "row": 3,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "celebrate": {
+          "row": 4,
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      }
+    },
+    "teen": {
+      "spritesheetPath": "spritesheet.webp",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "alert": {
+          "row": 1,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "talk": {
+          "row": 2,
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "working": {
+          "row": 3,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "celebrate": {
+          "row": 4,
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      }
+    },
+    "adult": {
+      "spritesheetPath": "spritesheet.webp",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "alert": {
+          "row": 1,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "talk": {
+          "row": 2,
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "working": {
+          "row": 3,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "celebrate": {
+          "row": 4,
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      }
+    },
+    "elder": {
+      "spritesheetPath": "spritesheet.webp",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "alert": {
+          "row": 1,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "talk": {
+          "row": 2,
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "working": {
+          "row": 3,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "celebrate": {
+          "row": 4,
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    
+    <clipPath id="squircle">
+      <path d="M512 0 C140 0 0 140 0 512 S140 1024 512 1024 1024 884 1024 512 884 0 512 0 Z"></path>
+    </clipPath>
+    <linearGradient id="bg" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#1a2042"></stop>
+      <stop offset="100%" stop-color="#0a0e24"></stop>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.55" r="0.5">
+      <stop offset="0%" stop-color="#a8c8f0" stop-opacity="0.55"></stop>
+      <stop offset="100%" stop-color="#a8c8f0" stop-opacity="0"></stop>
+    </radialGradient>
+    <linearGradient id="ghostBody" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#fafcff"></stop>
+      <stop offset="100%" stop-color="#dce6f5"></stop>
+    </linearGradient>
+    <radialGradient id="ghostGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#a8c8f0" stop-opacity="0.5"></stop>
+      <stop offset="100%" stop-color="#a8c8f0" stop-opacity="0"></stop>
+    </radialGradient>
+  </defs>
+
+  
+  <g clip-path="url(#squircle)">
+    <rect width="1024" height="1024" fill="url(#bg)"></rect>
+
+    
+    <g fill="#fef3c7">
+      <circle cx="120" cy="180" r="2" opacity="0.5"></circle>
+      <circle cx="250" cy="320" r="3" opacity="0.65"></circle>
+      <circle cx="880" cy="200" r="4" opacity="0.8"></circle>
+      <circle cx="820" cy="480" r="3" opacity="0.65"></circle>
+      <circle cx="200" cy="720" r="2" opacity="0.5"></circle>
+      <circle cx="880" cy="760" r="3" opacity="0.65"></circle>
+      <circle cx="380" cy="130" r="4" opacity="0.8"></circle>
+      <circle cx="680" cy="850" r="2" opacity="0.5"></circle>
+      <circle cx="150" cy="460" r="3" opacity="0.65"></circle>
+      <circle cx="930" cy="380" r="4" opacity="0.8"></circle>
+    </g>
+
+    
+    <circle cx="512" cy="560" r="380" fill="url(#halo)"></circle>
+
+    
+    <g transform="translate(512, 560) scale(2.8) translate(-100, -100)">
+      
+      <circle cx="100" cy="105" r="85" fill="url(#ghostGlow)"></circle>
+      
+      <path d="&#xA;        M 100,40&#xA;        C 138,40 158,68 158,108&#xA;        L 158,158&#xA;        Q 148,150 138,158&#xA;        Q 128,166 118,158&#xA;        Q 108,150 100,158&#xA;        Q 92,166 82,158&#xA;        Q 72,150 62,158&#xA;        Q 52,166 42,158&#xA;        L 42,108&#xA;        C 42,68 62,40 100,40 Z&#xA;      " fill="url(#ghostBody)" stroke="rgba(108,138,180,0.2)" stroke-width="1"></path>
+      
+      <ellipse cx="80" cy="100" rx="8" ry="11" fill="#1a1612"></ellipse>
+      <ellipse cx="120" cy="100" rx="8" ry="11" fill="#1a1612"></ellipse>
+      <circle cx="83" cy="95" r="3" fill="#fff"></circle>
+      <circle cx="123" cy="95" r="3" fill="#fff"></circle>
+      <circle cx="78" cy="105" r="1.5" fill="#fff" opacity="0.6"></circle>
+      
+      <path d="M 90,122 Q 100,134 110,122" stroke="#1a1612" stroke-width="2.5" fill="none" stroke-linecap="round"></path>
+      
+      <ellipse cx="64" cy="120" rx="7" ry="4" fill="#ffb8c8" opacity="0.55"></ellipse>
+      <ellipse cx="136" cy="120" rx="7" ry="4" fill="#ffb8c8" opacity="0.55"></ellipse>
+    </g>
+  </g>
+
+  
+  <path d="M512 0 C140 0 0 140 0 512 S140 1024 512 1024 1024 884 1024 512 884 0 512 0 Z" fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="1"></path>
+</svg>

@@ -1,0 +1,22 @@
+appId: com.mote.app
+productName: Mote
+icon: assets/icon
+files:
+  - out/**/*
+extraResources:
+  - from: assets/
+    to: assets/
+mac:
+  category: public.app-category.utilities
+  target:
+    - target: dmg
+    - target: zip
+
+win:
+  target:
+    - target: nsis
+    - target: zip
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true

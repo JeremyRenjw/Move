@@ -1,0 +1,11 @@
+node_modules/
+out/
+dist/
+.DS_Store
+*.tsbuildinfo
+.claude/
+*.env
+.env.*
+.env.local
+package-lock.json
+pnpm-lock.yaml

@@ -1,0 +1,131 @@
+/* ─── Mote · AI Desktop Pet · Design Tokens ─── */
+
+:root {
+  /* surfaces */
+  --bg: #efece4;
+  --bg-2: #e8e4da;
+  --surface: rgba(255, 253, 248, 0.72);
+  --surface-solid: #ffffff;
+  --elev: rgba(255, 253, 248, 0.92);
+  --hover: rgba(0, 0, 0, 0.04);
+  --pressed: rgba(0, 0, 0, 0.08);
+
+  /* text */
+  --text: #1a1612;
+  --text-2: #6b6357;
+  --text-3: #a39a8d;
+  --text-on-accent: #ffffff;
+
+  /* lines */
+  --hairline: rgba(0, 0, 0, 0.08);
+  --hairline-strong: rgba(0, 0, 0, 0.16);
+  --separator: rgba(0, 0, 0, 0.06);
+
+  /* accent (lulu amber default) */
+  --accent: #e89534;
+  --accent-2: #d97a1f;
+  --accent-soft: rgba(232, 149, 52, 0.14);
+  --accent-glow: rgba(232, 149, 52, 0.28);
+
+  /* status */
+  --good: #34a853;
+  --warn: #f5a623;
+  --bad: #e25c52;
+  --info: #4a90e2;
+  --violet: #8b5cf6;
+
+  /* shadow */
+  --shadow-1: 0 1px 2px rgba(40, 30, 18, 0.06), 0 4px 16px rgba(40, 30, 18, 0.06);
+  --shadow-2: 0 4px 16px rgba(40, 30, 18, 0.08), 0 16px 48px rgba(40, 30, 18, 0.10);
+  --shadow-pop: 0 20px 60px rgba(40, 30, 18, 0.22), 0 4px 12px rgba(40, 30, 18, 0.08);
+  --shadow-inset: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+
+  /* radius */
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 14px;
+  --r-xl: 20px;
+
+  /* typography */
+  --font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
+    "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  --font-mono: "SF Mono", ui-monospace, "JetBrains Mono", Menlo, monospace;
+
+  /* density */
+  --gap: 12px;
+  --pad: 14px;
+}
+
+/* Taotao pink accent (set via [data-accent="taotao"]) */
+[data-accent="taotao"] {
+  --accent: #e8639c;
+  --accent-2: #d04079;
+  --accent-soft: rgba(232, 99, 156, 0.14);
+  --accent-glow: rgba(232, 99, 156, 0.30);
+}
+
+/* ─── Animations ─── */
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-4px); }
+}
+
+@keyframes pulse-ring {
+  0%   { box-shadow: 0 0 0 0 var(--accent-glow); }
+  70%  { box-shadow: 0 0 0 14px transparent; }
+  100% { box-shadow: 0 0 0 0 transparent; }
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0.3; }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0); }
+  25% { transform: rotate(-3deg); }
+  75% { transform: rotate(3deg); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: scale(0.96) translateY(8px); }
+  to   { opacity: 1; transform: none; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ─── Scrollbar ─── */
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.12);
+  border-radius: 3px;
+  border: 1.5px solid transparent;
+  background-clip: content-box;
+}
+
+/* ─── Base ─── */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sprite {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
